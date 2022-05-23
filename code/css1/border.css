@@ -1,0 +1,9 @@
+.bord{
+		border-bottom: 1px dotted #006699;
+		border-right: 1px dotted ##FFCCCC;
+		border-left: 1px dotted ##FFCCCC;
+		border-top: 1px dotted #006192;
+    }
+.bell:hover{
+background-color:#FFCCCC;
+}

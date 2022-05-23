@@ -1,0 +1,215 @@
+/* Essentials */
+
+html, div, map, dt, isindex, form, header, aside, section, section, article, footer {  
+    display: block;  
+} 
+
+html, body {
+font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+
+}
+
+/* Header */
+
+header#header {
+height: 55px;
+/*width: 100%;*/
+width: 2000px;
+margin-left:140px;
+background: #222222 url(../images/header_bg.png) repeat-x;
+}
+
+header#header h1.site_title, header#header h2.section_title {
+	float: left;
+	margin: 0;
+	font-size: 22px;
+	display: block;
+	width: 30%;
+	height: 55px;
+	font-weight: normal;
+	text-align: left;
+	text-indent: 1.8%;
+	line-height: 55px;
+	color: #F00; /* hawassa city fc text color */
+	text-shadow: 0 -1px 0 #000;
+}
+
+header#header h1.site_title a {
+	color: #0F0;	/* Admin Panel text color */
+	text-decoration: none;
+	margin-left: 10px;
+	margin-right: 15px;
+	border-left-style: groove;
+}
+
+header#header h2.section_title {
+text-align: center;
+text-indent: 4.5%;
+width: 68%;
+background: url(../images/header_shadow.png) no-repeat left top;
+}
+
+.btn_view_site {
+float: left;
+width: 9%;
+}
+
+.btn_view_site a {
+	display: block;
+	margin-top: 12px;
+	width: 91px;
+	height: 27px;
+	background: url(../images/btn_view_site.png) no-repeat;
+	text-align: center;
+	line-height: 29px;
+	color: #FFF;	/* logout text color */
+	text-decoration: none;
+	text-shadow: 0 -1px 0 #000;
+}
+
+.btn_view_site a:hover {
+background-position: 0 -27px;
+}
+
+/* Secondary Header Bar */
+
+.user a.logout_user {
+float: left;
+display: block;
+width: 16px;
+height: 35px;
+text-indent: -5000px;
+background: url(../images/icn_logout.png) center no-repeat;
+}
+
+
+/* Sidebar */
+
+aside#sidebar {
+	/*margin-left:140px;*/
+/*width: 23%;*/
+/*width: 18%;*/
+	width: 230px;
+	/*background: #E0E0E3 url(../images/sidebar.png) repeat;*/
+	background-color: #FFFFCC; 	/* background color of left menu */
+	float: left;
+	min-height: 450px;	/* height of left menu */
+	/*margin-top: -4px;*/
+	border-radius:0px 0px  0px 20px;
+}
+
+#sidebar hr {
+border: none;
+outline: none;
+background: url(../images/sidebar_divider.png) repeat-x;
+display: block;
+width: 100%;
+height: 2px;}
+
+
+
+/* Sidebar Menu */
+
+#sidebar h3 {
+	color: maroon;	/* users,news,etc text color */
+	text-transform: uppercase;
+	text-shadow: 0 1px 0 maroon;
+	font-size: 13px;
+	margin: 10px 0 10px 6%;
+	display: block;
+	float: left;
+	width: 90%; /* hide box width */
+}
+
+.toggleLink {
+	color: white;
+	font-size: 10px;
+	text-decoration: none;
+	display: block;
+	float: right;
+	margin-right: 2%
+}
+
+#sidebar .toggleLink:hover {
+color: #77BACE; /* hide text hover color */
+text-decoration: none;
+}
+
+#sidebar ul {
+clear: both;
+margin: 0; 
+padding: 0;
+}
+
+#sidebar li {
+list-style: none;
+margin: 0 0 0 12%; 
+padding: 0;
+}
+
+#sidebar li a {
+	color: maroon; /* lists text color */
+	padding-left: 25px;
+	text-decoration: none;
+	display: inline-block;
+	height: 17px;
+	line-height: 17px;
+	text-shadow: 0 1px 0 #fff;
+	margin: 2px 0;
+}
+
+#sidebar li a:hover {
+	color: #FF0000;	/* lists hover text color */
+}
+
+/* Sidebar Icons */
+
+#sidebar li.icn_new_article a {
+background: url(../images/icn_new_article.png) no-repeat center left;
+}
+#sidebar li.icn_edit_article a {
+background: url(../images/icn_edit_article.png) no-repeat center left;
+}
+#sidebar li.icn_categories a {
+background: url(../images/icn_categories.png) no-repeat center left;
+}
+#sidebar li.icn_tags a {
+background: url(../images/icn_tags.png) no-repeat center left;
+}
+#sidebar li.icn_add_user a {
+background: url(../images/icn_add_user.png) no-repeat center left;
+}
+#sidebar li.icn_view_users a {
+background: url(../images/icn_view_users.png) no-repeat center left;
+}
+#sidebar li.icn_profile a {
+background: url(../images/icn_profile.png) no-repeat center left;
+}
+#sidebar li.icn_folder a {
+background: url(../images/icn_folder.png) no-repeat center left;
+}
+#sidebar li.icn_photo a {
+background: url(../images/icn_photo.png) no-repeat center left;
+}
+#sidebar li.icn_jump_back a {
+background: url(../images/icn_jump_back.png) no-repeat center left;
+}
+#sidebar p {
+	color: #FFFFFF;
+	padding-left: 6%;
+	text-shadow: 0 1px 0 #fff;
+	margin: 10px 0 0 0;
+}
+#sidebar a {
+color: #666666;
+text-decoration: none;
+height:2px;
+}
+
+#sidebar a:hover {
+text-decoration: underline;
+}
+
+#sidebar footer {
+margin-top: 100%;
+}
