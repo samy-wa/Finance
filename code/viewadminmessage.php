@@ -6,15 +6,13 @@ session_start();
 <html>
 
 <head>
-    <link rel="stylesheet" type=" text/css" href="css/nav.css">
-    <!--<link href="../FrontEnd/css/admin_panel_home.css" rel="stylesheet" type="text/css" /-->
-    <link href="css/admin_panel.css" rel="stylesheet" type="text/css" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>View Message</title>
     <link href="bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
     </link>
     <script type="text/javascript" src="bootstrap/dist/js/bootstrap.js"></script>
-    <link rel="stylesheet" href="css/layout.css" type="text/css" media="screen" />
+    <script src="js/validateaccount.js" language="javascript" type="text/javascript"></script>
+
     <!--[if lt IE 9]>
 	<link rel="stylesheet" href="css/ie.css" type="text/css" media="screen" />
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -74,31 +72,31 @@ session_start();
                 </thead>
                 <tbody>
                     <?php 
-	$con = mysqli_connect("localhost","root","") or die (mysql_error());
-	mysqli_select_db($con,"financedb" );
-//$too=$_POST["too"];
-$query="select * from message where too='administrator' ";
-$result=mysqli_query($con,$query);
-while($row3 = mysqli_fetch_array($result)) 
-{
-echo "<tr >";
-echo '<td>'.$row3['m_id'].'</td>';
-echo '<td>'.$row3['frm'].'</td>';
-echo '<td>'.$row3['too'].'</td>';
-echo '<td>'.$row3['pnumber'].'</td>';
-echo '<td>'.$row3['message'].'</td>';
-echo '<td>'.$row3['Date'].'</td>';
-
-echo '<td>';
- ?>
+                    	$con = mysqli_connect("localhost","root","") or die (mysql_error());
+                    	mysqli_select_db($con,"financedb" );
+                    //$too=$_POST["too"];
+                    $query="select * from message where too='administrator' ";
+                    $result=mysqli_query($con,$query);
+                    while($row3 = mysqli_fetch_array($result)) 
+                    {
+                    echo "<tr >";
+                    echo '<td>'.$row3['m_id'].'</td>';
+                    echo '<td>'.$row3['frm'].'</td>';
+                    echo '<td>'.$row3['too'].'</td>';
+                    echo '<td>'.$row3['pnumber'].'</td>';
+                    echo '<td>'.$row3['message'].'</td>';
+                    echo '<td>'.$row3['Date'].'</td>';
+                    
+                    echo '<td>';
+                     ?>
                     <a rel="facebook" href="adminmsg1.php?m_id=<?php echo $row3['m_id']; ?> & view=delete"
                         onClick="return confirm('Are you sure??')"> <strong>Delete</strong></a>
                     <?php
-
-echo "</td> </tr>";
-	//$i++;
-  }
- ?>
+                    
+                    echo "</td> </tr>";
+                    	//$i++;
+                      }
+                     ?>
                 </tbody>
             </table>
         </div>

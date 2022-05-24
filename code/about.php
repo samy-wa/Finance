@@ -3,7 +3,7 @@
 <head>
 <title>about </title>
 <link rel="stylesheet" href="css/sidebar.css">
-</head>
+</head> 
 <body>
 <body >
 <div class="container">
