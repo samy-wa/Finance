@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 4.6.4
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 03, 2019 at 12:45 PM
--- Server version: 5.7.14
--- PHP Version: 5.6.25
+-- Generation Time: May 24, 2022 at 12:29 PM
+-- Server version: 10.4.22-MariaDB
+-- PHP Version: 8.0.13
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -85,7 +86,8 @@ INSERT INTO `employee` (`id`, `fname`, `lname`, `Sex`, `proffession`, `phone`, `
 (23, 'Demeke', 'Seyeme', 'male', 'electrical', 919860010, 'deme@gmail.com', 'degree', '2016-06-02'),
 (24, 'Kube', 'Seyeme', 'female', 'electrical', 919860111, 'kubkub@gmail.com', 'degree', '2016-06-07'),
 (29, 'kebede', 'alemu', 'male', 'cmptr', 985234521, 'kebe@gmail.com', 'degree', '2019-05-22'),
-(34, 'abebe', 'kero', 'male', 'cmptr', 985234521, 'abebe@bmail.com', 'degree', '2019-03-01');
+(34, 'abebe', 'kero', 'male', 'cmptr', 985234521, 'abebe@bmail.com', 'degree', '2019-03-01'),
+(150, 'Hello', 'World', 'male', 'Computer Science', 955666655, 'clicksamywa@gmail.com', 'PHD', '2022-05-21');
 
 -- --------------------------------------------------------
 
@@ -107,31 +109,24 @@ CREATE TABLE `message` (
 --
 
 INSERT INTO `message` (`m_id`, `frm`, `too`, `pnumber`, `message`, `Date`) VALUES
-(49, 'administrator', 'systemadnin', 918445527, 'ghghghbggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg', '2016-05-18 23:24:05'),
-(60, 'systemadnin', 'casher', 915859531, 'please accept the customer', '2016-05-23 16:53:11'),
-(62, 'administrator', 'casher', 918445527, 'please see correctly', '2016-05-27 19:18:31'),
 (64, 'administrator', 'casher', 915859531, '6:00 we have conference', '2016-05-31 08:07:41'),
 (65, 'administrator', 'systemadnin', 915859531, 'please do the following', '2016-06-22 17:41:54'),
-(67, 'officer', 'auditor', 915859531, 'hi fried selam new?', '2016-06-22 21:22:04'),
 (68, 'systemadnin', 'casher', 915859534, 'PLEASE MEET WITH ME TODAY !!', '2016-06-23 17:18:43'),
 (70, 'administrator', 'casher', 915158598, 'ghghghgfee', '2016-06-23 19:48:26'),
-(72, 'systemadnin', 'auditor', 987654346, 'well done', '2019-05-07 08:30:26'),
 (73, 'auditor', 'casher', 983422167, 'welcome Abebe', '2019-05-12 03:06:38'),
-(74, 'officer', 'auditor', 983422167, 'audit it please', '2019-05-12 03:35:50'),
-(75, 'systemadnin', 'auditor', 983422167, 'Hello, are you here?', '2019-05-14 04:30:52'),
-(76, 'systemadnin', 'auditor', 983422167, 'please come back', '2019-05-14 04:36:37'),
 (78, 'systemadnin', 'systemadnin', 983422167, 'peace', '2019-05-14 04:41:49'),
-(79, 'administrator', 'auditor', 983435678, 'do this please', '2019-05-14 05:27:19'),
-(81, 'casher', 'auditor', 983435678, 'welcome here', '2019-05-14 13:15:00'),
-(82, 'systemadmin', 'officer', 983435678, 'do', '2019-05-14 13:16:23'),
-(83, 'officer', 'auditor', 983435678, 'bye bye', '2019-05-15 05:50:13'),
-(84, 'officer', 'systemadmin', 983435678, 'ok ', '2019-05-15 05:50:59'),
-(85, 'auditor', 'auditor', 983435678, 'hello auditor', '2019-05-15 12:47:43'),
 (87, 'auditor', 'officer', 983422167, 'dddd\r\n', '2019-05-19 00:17:39'),
-(88, 'officer', 'administrator', 983422167, 'hi', '2019-05-21 23:50:29'),
 (89, 'auditor', 'casher', 983422167, 'hi', '2019-05-21 23:53:03'),
 (90, 'systemadmin', 'casher', 983422167, 'kkkkkkkkkkk', '2019-05-30 03:41:13'),
-(91, 'auditor', 'casher', 983422167, 'hello casher', '2019-06-01 05:21:17');
+(92, 'administrator', 'administrator', 2147483647, 'Ambo University is one of the public higher institutions that was founded in 2000, along with the Second-Generation universities in Ethiopia.It is located in the emerging town of Samara which is the capital city of Ethiopian Afar regional state, 588 kilometers away from Addis Ababa. The University officially commenced its service with 1,867 students, 3 faculties and 12 departments. In the recent years, the intake capacity is rising from year to year. So currently, it has reached 4,866 students i', '2022-05-14 16:02:29'),
+(93, 'administrator', 'administrator', 2147483647, 'Ambo University is one of the public higher institutions that was founded in 2000, along with the Second-Generation universities in Ethiopia.It is located in the emerging town of Samara which is the capital city of Ethiopian Afar regional state, 588 kilometers away from Addis Ababa. The University officially commenced its service with 1,867 students, 3 faculties and 12 departments. In the recent years, the intake capacity is rising from year to year. So currently, it has reached 4,866 students i', '2022-05-14 16:10:02'),
+(94, 'administrator', 'administrator', 2147483647, 'Ambo University is one of the public higher institutions that was founded in 2000, along with the Second-Generation universities in Ethiopia.It is located in the emerging town of Samara which is the capital city of Ethiopian Afar regional state, 588 kilometers away from Addis Ababa. The University officially commenced its service with 1,867 students, 3 faculties and 12 departments. In the recent years, the intake capacity is rising from year to year. So currently, it has reached 4,866 students i', '2022-05-14 16:14:49'),
+(96, 'systemadmin', 'systemadmin', 2147483647, 'A financial management system is a system or software that an organization uses to oversee and govern\r\n                its income, expenses, and assets with the objectives of ensuring sustainability. Finance Management\r\n                system is used to provide an option to generate the salary automatically every month.The main objective\r\n                of this system is to study the nature of the system in detail and identify the problem as well as to\r\n                define the relevant way t', '2022-05-20 16:36:02'),
+(97, 'systemadmin', 'systemadmin', 2147483647, 'A financial management system is a system or software that an organization uses to oversee and govern\r\n', '2022-05-20 16:37:15'),
+(98, 'systemadmin', 'systemadmin', 2147483647, 'A financial management system is a system or software that an organization uses to oversee and govern\r\n                its income, expenses, and assets with the objectives of ensuring sustainability. Finance Management\r\n                system is used to provide an option to generate the salary automatically every month.The main objective\r\n                of this system is to study the nature of the system in detail and identify the problem as well as to\r\n                define the relevant way t', '2022-05-20 16:37:36'),
+(100, 'administrator', 'casher', 2147483647, 'Hellow world \r\nWrite message or comment here', '2022-05-21 17:07:44'),
+(102, 'administrator', 'officer', 2147483647, 'Write message or comment here\r\nWrite message or comment here\r\nWrite message or comment here', '2022-05-21 18:42:23'),
+(103, 'administrator', 'auditor', 2147483647, 'Write message or comment here Write message or comment here\r\nWrite message or comment here Write message or comment here\r\nWrite message or comment here Write message or comment here\r\nWrite message or comment here Write message or comment here\r\nWrite message or comment here Write message or comment here\r\nWrite message or comment here Write message or comment here\r\nWrite message or comment here Write message or comment here\r\nWrite message or comment here Write message or comment here\r\n', '2022-05-24 12:50:05');
 
 -- --------------------------------------------------------
 
@@ -166,7 +161,10 @@ INSERT INTO `otherexpense` (`id`, `expediturecuse`, `amount`, `date`) VALUES
 (55, 'recration', 501.000, '2016-05-10'),
 (56, 'recration', 501.000, '2016-05-10'),
 (77, 'labor worker', 12.000, '2016-06-08'),
-(91, 'hobbies', 6000.000, '2019-06-14');
+(91, 'hobbies', 6000.000, '2019-06-14'),
+(132, 'cause', 100.000, '2022-05-21'),
+(133, '', 0.000, '0000-00-00'),
+(1325, 'Expenditure Cause', 100.000, '2022-05-21');
 
 -- --------------------------------------------------------
 
@@ -192,7 +190,7 @@ CREATE TABLE `payroll` (
 --
 
 INSERT INTO `payroll` (`payingid`, `accnum`, `fname`, `lname`, `salary`, `allowance`, `phone_number`, `overtime`, `punish`, `date`) VALUES
-(1, 1000585647000, 'Habtie', 'andargie', 5000.0000000, 100.0000000, 915856598, 200.0000000, 100.0000000, '2016-06-01'),
+(1, 1000585647000, 'Habtie', 'andargie', 5000.0000000, 100.0000000, 915856598, 250.0000000, 100.0000000, '2016-06-02'),
 (2, 1000585647001, 'Bayew', 'Dessie', 10000.0000000, 200.0000000, 915856598, 300.0000000, 100.0000000, '2016-06-08'),
 (3, 1000585647003, 'Addisu', 'Tesema', 15000.0000000, 120.0000000, 915856598, 100.0000000, 150.0000000, '2016-06-14'),
 (4, 1000585647004, 'Mamo', 'Yayu', 6000.0000000, 120.0000000, 915856512, 100.0000000, 150.0000000, '2016-06-07'),
@@ -216,7 +214,9 @@ INSERT INTO `payroll` (`payingid`, `accnum`, `fname`, `lname`, `salary`, `allowa
 (22, 1000585600224, 'Kube', 'Seyeme', 5986.0000000, 200.0000000, 915850028, 500.0000000, 250.0000000, '2016-06-07'),
 (23, 1000585600224, 'Kube', 'Seyeme', 5986.0000000, 200.0000000, 915850028, 500.0000000, 250.0000000, '2016-06-07'),
 (24, 1000137893320, 'Habtie', 'Alemu', 10000.0000000, 200.0000000, 926376843, 250.0000000, 150.0000000, '2019-05-22'),
-(25, 1000585600224, 'Kube', 'Seyeme', 5986.0000000, 200.0000000, 915850028, 500.0000000, 250.0000000, '2016-06-07');
+(25, 1000585600224, 'Kube', 'Seyeme', 5986.0000000, 200.0000000, 915850028, 500.0000000, 250.0000000, '2016-06-07'),
+(26, 1000585647000, 'Habtie', 'andargie', 1234567.0000000, 1234.0000000, 955555555, 100.0000000, 100.0000000, '2022-05-21'),
+(27, 1234567891234, 'Habtie', 'andargie', 1234567.0000000, 1234.0000000, 922222222, 100.0000000, 100.0000000, '2022-05-21');
 
 --
 -- Indexes for dumped tables
@@ -261,26 +261,32 @@ ALTER TABLE `payroll`
 --
 ALTER TABLE `account`
   MODIFY `id` int(120) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+
 --
 -- AUTO_INCREMENT for table `employee`
 --
 ALTER TABLE `employee`
-  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=151;
+
 --
 -- AUTO_INCREMENT for table `message`
 --
 ALTER TABLE `message`
-  MODIFY `m_id` int(120) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=92;
+  MODIFY `m_id` int(120) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=104;
+
 --
 -- AUTO_INCREMENT for table `otherexpense`
 --
 ALTER TABLE `otherexpense`
-  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=92;
+  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1326;
+
 --
 -- AUTO_INCREMENT for table `payroll`
 --
 ALTER TABLE `payroll`
-  MODIFY `payingid` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `payingid` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+COMMIT;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
