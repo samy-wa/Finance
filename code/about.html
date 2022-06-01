@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/sidebar.css">
 </head>
 <body >
-  <div class="container-fluid">
+  <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -22,8 +22,8 @@
                     href="about.html">About Us</a></li>
                   <li class="nav-item"><a class="nav-link display-iframe" data-display-iframe="true"
                     href="contact.html">Contact Us</a></li>
-                  <li class="nav-item"><a class="nav-link display-iframe" data-display-iframe="true"
-                    href="loginp1.php">Login</a></li>
+                  <li class="nav-item"> <a class="nav-link display-iframe" data-display-iframe="true" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    href="#">Login</a></li>
               </ul>
           </div>
       </div>
@@ -43,26 +43,6 @@
       of this system is to study the nature of the system in detail and identify the problem as well as to
       define the relevant way to design a computerize system for samara campus financial management system.
   </p>
-  <!-- <div class="row">
-    <div class="col-sm-6">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-6">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-  </div> -->
   <div class="row m-5">
     <div class="col-sm-6">
       <div class="card">
@@ -94,48 +74,55 @@
     </div>
   </footer>
 
-<!-- 
-	<div class="container justify-content-center" id="templatemo_content_wrapper">
-
-        <h3 >ABOUT WOLISO UNIVERSITY FINANCE</h3>
-        <p >As education plays an important role in the development of a country one of the objectives that the Ethiopian ministry of education targeted is quality education development.
-        Samara University, one of the universities in Ethiopia is also working on quality education in order to attain its mission. So it is unquestionable to get better computerized based application in order to achieve this kind of objective. Samara University, a big academic institution having a large number of employees, still has a manual financial management system and software technology.
-        So it is unable to serve the university employees effectively and efficiently in order to make them satisfied and facilitate the growth of the university.
-        As education plays an important role in the development of a country one of the objectives that the Ethiopian ministry of education targeted is quality education development.
-            Samara University, one of the universities in Ethiopia is also working on quality education in order to attain its mission. So it is unquestionable to get better computerized based application in order to achieve this kind of objective. Samara University, a big academic institution having a large number of employees, still has a manual financial management system and software technology.
-            So it is unable to serve the university employees effectively and efficiently in order to make them satisfied and facilitate the growth of the university.</p>
-            
-        <div class="row">
-            <div class="col-sm-6">
-              <div class="card">
-                <div class="card-body">
-                  <h1 class="card-title justify-content-center">VISSION</h1>
-                  <P class="card-text">1.Provide quality higher education at all levels through regular, extension, distance and continuing education modes so as to produce competent professionals who can support the development endeavour of the country</p>
-                    <P class="card-text">2.Produce competent entrepreneurs who could contribute to the technology transfer endeavours of the country</p>
-                    <P class="card-text">3.Undertake researches that help to solve the socio-economic problems of the country and that can also add new values and knowledge to the society;</P>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title justify-content-center">MISSION</h5>
-              	<P class="card-text">Producing competent graduates, releasing problem solving outputs and providing need based community services through education,training, consultency and research to foster the social and economic development of the nation.</p>
-                </div>
-              </div>
-            </div>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <form id="form1" name="login1" method="post" action="login1.php">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+    <h5 class="modal-title" id="exampleModalLabel">Login Modal</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+        <div class="modal-body">
+          <div class="container">
+            <img src="images/user1.jpg" align="CENTER" width="300" height="100">
+            <div class="form-group mb-3">
+              <label>
+                To
+              </label>
+              <select class="form-select" name="account_type" placeholder="account_type" required
+              aria-label="Default select example">
+              <option value="" selected="selected">--Select--</option>
+              <option value="Administrator">Administrator</option>
+              <option value="System Admin">System Admin</option>
+              <option value="General Casher">General Casher</option>
+              <option value="Finance Officer">finance officer</option>
+              <option value="Auditor">Auditor</option>
+            </select>
           </div>
-
-    </div> 
-    
-    <div class="d-flex justify-content-center pt-5 mt-5" id="templatemo_footer">
-        
-        <div class="margin_bottom_10"></div>
-        
-        Copyright © 2011 <a href="http://www.su.edu.et/">Ambo University</a> | <a href="http://www.su.edu.et/" target="_parent">AU Woliso Campus Finance Management System</a>
-        
-        <div class="margin_bottom_10"></div>
-   	</div> -->
-</div> 
+                <div class="form-group mb-3">
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">UserName</label>
+                    <input class="form-control" name="username" type=TEXT onKeyPress="return ValidateAlpha(event)"
+                    required>
+                  </div>
+                </div>
+                <div class="form-group mb-3">
+                  <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">UserName</label>
+                        <input class="form-control" name="password" type=PASSWORD required>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                <button class="btn btn-success" name="Submit" type="submit" value="Login">Login</button>
+              </div>
+              <a href="Adminfogot.php" class="tooltip-test" title="Tooltip">Forgot password</a> 
+      </div>
+    </div>
+  </form>
+  </div>
+  </div>
 </body><!-- end of container -->
 </html>
