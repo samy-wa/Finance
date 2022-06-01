@@ -75,10 +75,10 @@ function noBack() {
                             </li>
                         </ul>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a class="display-iframe" data-display-iframe="true" href="galarry.php"
                             target="bayew">Gallery</a>
-                    </li>
+                    </li> -->
                 </ul>
 
             </nav>
@@ -100,8 +100,8 @@ function noBack() {
                             <ul class="nav navbar-nav ml-auto">
                                 <li class="nav-item"><a class="nav-link active display-iframe"
                                         data-display-iframe="true" href="Financeofficerpage.php">Home</a></li>
-                                <li class="nav-item"><a class="nav-link display-iframe" data-display-iframe="false"
-                                        href="about.php" target="bayew">About</a></li>
+                                <!-- <li class="nav-item"><a class="nav-link display-iframe" data-display-iframe="false"
+                                        href="about.php" target="bayew">About</a></li> -->
                                 <li class="nav-item"><a class="nav-link display-iframe" data-display-iframe="true"
                                         href="contact.php" target="bayew">Contact</a></li>
                                 <li class="nav-item"><a class="nav-link display-iframe" data-display-iframe="true"
@@ -114,7 +114,7 @@ function noBack() {
                 </nav>
                 <iframe name="bayew" class="Mainiframe" style="width: 100%; height: 50rem;"></iframe>
                 <div class="line"></div>
-                <h2>About Ambo</h2>
+                <!-- <h2>About Ambo</h2>
                 <p>Ambo University is one of the public higher institutions that was founded in 2000, along with the
                     Second-Generation universities in Ethiopia.It is located in the emerging town of Samara which is the
                     capital city of Ethiopian Afar regional state, 588 kilometers away from Addis Ababa. The University
@@ -133,7 +133,7 @@ function noBack() {
                     of this system is to study the nature of the system in detail and identify the problem as well as to
                     define the relevant way to design a computerize system for Woliso campus financial management
                     system.
-                </p>
+                </p> -->
                 <footer>
                     <div class="d-flex justify-content-center pt-5 mt-5" id="templatemo_footer">
                         Copyright © 2011 <a href="https://estudent.ambou.edu.et/">Ambo University</a> | <a
@@ -147,76 +147,6 @@ function noBack() {
     </body>
 
 </body>
-
-<!-- <body onLoad="noBack();" onpageshow="if (event.persisted) noBack();" onUnload="">
-
-    <body>
-        <div id="content">
-
-            <div id="header">
-                <div id="logo">
-                    <div width="200" align="center">
-                        <MARQUEE behavior="scroll" direction="left" width="650" font-size="100px" scrollamount="15"
-                            placeholder="welcome">
-                            <p> &nbsp;WELCOME TO SAMARA UNIVERSITY FINANCIAL MANAGMENT SYSTEM</p>
-                        </MARQUEE>
-                    </div>
-
-                </div>
-                <div id="menu">
-                    <ul>
-                        <li><a href="Financeofficerpage.php">Home</a></li>
-                        <li><a href="galarry.php" target="bayew">Gallery</a></li>
-                        <li><a href="about.php" target="bayew">About</a></li>
-                        <li><a href="contact.php" target="bayew">Contact</a></li>
-                        <li><a href="logout.php">logout</a></li>
-                        <li><a href="changepass.php" target="bayew">change password</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div id="main_top">
-                <div id="main">
-                    <div id="right">
-
-                        <iframe name="bayew" width="667px" height="500px"></iframe>
-                    </div>
-                    <div id="left">
-
-                        <h3>Officer Roles</h3>
-                        <div id="categories">
-                            <ul>
-                                <li><a href="employeeregister.php" target="bayew">Register Employees</a></li>
-                                <li><a href="searchempinfo.php" target="bayew">Search Employee Information</a></li>
-                                <li><a href="updateempifobyid.php" target="bayew">Update Employee Information</a></li>
-                                <li><a href="deleteempbyid.php" target="bayew">Delete Employee Information</a></li>
-                            </ul>
-                        </div>
-
-                        <h3>Message</h3>
-                        <div id="partners">
-                            <ul>
-                                <li><a href="officermess.php" target="bayew">Write Message & commennt</a></li>
-                                <li><a href="officermessage.php" target="bayew">View Message Here</a></li>
-                            </ul>
-
-                        </div>
-
-                    </div>
-                    <div style="clear:both;"></div>
-                </div>
-                <div id="main_bottom"></div>
-            </div>
-
-        </div>
-        <center>
-            <div id="footer">
-                <p>Copyright©2011 <a href="#">Privacy Policy</a></p>
-                <p>Design by <a href="#" title="Free Web Templates">Samara university students</a>
-                </p>
-            </div>
-        </center>
-    </body> -->
 <script src="plugins/jquery/jquery.min.js"></script>
 <script src="bootstrap/dist/js/popper.min.js"></script>
 <script src="plugins/jquery/slim.min.js"></script>

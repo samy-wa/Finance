@@ -6,20 +6,12 @@
     <title>Administrator page</title>
     <meta name="keywords" content="" />
     <meta name="description" content="" />
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="css/sidebar.css">
 
-    <!-- Font Awesome JS -->
-    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script> -->
     <script defer src="plugins/fontawesome-free-5.15.4/js/solid.js"></script>
     <script defer src="plugins/fontawesome-free-5.15.4/js/fontawesome.js"></script>
-
-    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
-        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous">
-    </script> -->
 
 </head>
 <script type="text/javascript">
@@ -46,9 +38,9 @@ function noBack() {
                     <a class="display-iframe" data-display-iframe="true" href="seereportbydate.php" target="bayew">See
                         Finance report</a>
                 </li>
-                <li>
+                <!-- <li>
                     <a class="display-iframe" data-display-iframe="true" href="galarry.php" target="bayew">Gallery</a>
-                </li>
+                </li> -->
                 <li>
                     <a href="#pageSubmenu" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle"
                         aria-controls="pageSubmenu">Message
@@ -87,8 +79,8 @@ function noBack() {
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item"><a class="nav-link active display-iframe" data-display-iframe="true"
                                     href="administratorlastpage.php">Home</a></li>
-                            <li class="nav-item"><a class="nav-link display-iframe" data-display-iframe="false"
-                                    href="about.php" target="bayew">About</a></li>
+                            <!-- <li class="nav-item"><a class="nav-link display-iframe" data-display-iframe="false"
+                                    href="about.php" target="bayew">About</a></li> -->
                             <li class="nav-item"><a class="nav-link display-iframe" data-display-iframe="true"
                                     href="contact.php" target="bayew">Contact</a></li>
                             <li class="nav-item"><a class="nav-link display-iframe" data-display-iframe="true"
@@ -101,7 +93,7 @@ function noBack() {
             </nav>
             <iframe name="bayew" class="Mainiframe" style="width: 100%; height: 50rem;"></iframe>
             <div class="line"></div>
-            <h2>About Ambo</h2>
+            <!-- <h2>About Ambo</h2>
             <p>Ambo University is one of the public higher institutions that was founded in 2000, along with the
                 Second-Generation universities in Ethiopia.It is located in the emerging town of Samara which is the
                 capital city of Ethiopian Afar regional state, 588 kilometers away from Addis Ababa. The University
@@ -115,21 +107,7 @@ function noBack() {
                 system is used to provide an option to generate the salary automatically every month.The main objective
                 of this system is to study the nature of the system in detail and identify the problem as well as to
                 define the relevant way to design a computerize system for samara campus financial management system.
-            </p>
-            <p>Ambo University is one of the public higher institutions that was founded in 2000, along with the
-                Second-Generation universities in Ethiopia.It is located in the emerging town of Samara which is the
-                capital city of Ethiopian Afar regional state, 588 kilometers away from Addis Ababa. The University
-                officially commenced its service with 1,867 students, 3 faculties and 12 departments.
-                In the recent years, the intake capacity is rising from year to year. So currently, it has reached 4,866
-                students in regular, 1025 students in extension and 1579 students in summer programmes. These programs
-                are operating under eight Colleges, 39 departments.To this effect, the university has shown much
-                achievement in education, research and community service.
-                A financial management system is a system or software that an organization uses to oversee and govern
-                its income, expenses, and assets with the objectives of ensuring sustainability. Finance Management
-                system is used to provide an option to generate the salary automatically every month.The main objective
-                of this system is to study the nature of the system in detail and identify the problem as well as to
-                define the relevant way to design a computerize system for samara campus financial management system.
-            </p>
+            </p> -->
             <footer>
                 <div class="d-flex justify-content-center pt-5 mt-5" id="templatemo_footer">
                     Copyright © 2011 <a href="https://estudent.ambou.edu.et/">Ambo University</a> | <a

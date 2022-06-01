@@ -65,9 +65,9 @@ function noBack() {
                         </li>
                     </ul>
                 </li>
-                <li>
+                <!-- <li>
                     <a class="display-iframe" data-display-iframe="true" href="galarry.php" target="bayew">Gallery</a>
-                </li>
+                </li> -->
             </ul>
 
         </nav>
@@ -89,8 +89,8 @@ function noBack() {
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item"><a class="nav-link active display-iframe" data-display-iframe="true"
                                     href="auditorpage.php">Home</a></li>
-                            <li class="nav-item"><a class="nav-link display-iframe" data-display-iframe="false"
-                                    href="about.php" target="bayew">About</a></li>
+                            <!-- <li class="nav-item"><a class="nav-link display-iframe" data-display-iframe="false"
+                                    href="about.php" target="bayew">About</a></li> -->
                             <li class="nav-item"><a class="nav-link display-iframe" data-display-iframe="true"
                                     href="contact.php" target="bayew">Contact</a></li>
                             <li class="nav-item"><a class="nav-link display-iframe" data-display-iframe="true"
@@ -103,7 +103,7 @@ function noBack() {
             </nav>
             <iframe name="bayew" class="Mainiframe" style="width: 100%; height: 50rem;"></iframe>
             <div class="line"></div>
-            <h2>About Ambo</h2>
+            <!-- <h2>About Ambo</h2>
             <p>Ambo University is one of the public higher institutions that was founded in 2000, along with the
                 Second-Generation universities in Ethiopia.It is located in the emerging town of Samara which is the
                 capital city of Ethiopian Afar regional state, 588 kilometers away from Addis Ababa. The University
@@ -117,7 +117,7 @@ function noBack() {
                 system is used to provide an option to generate the salary automatically every month.The main objective
                 of this system is to study the nature of the system in detail and identify the problem as well as to
                 define the relevant way to design a computerize system for Woliso campus financial management system.
-            </p>
+            </p> -->
             <footer>
                 <div class="d-flex justify-content-center pt-5 mt-5" id="templatemo_footer">
                     Copyright © 2011 <a href="https://estudent.ambou.edu.et/">Ambo University</a> | <a
